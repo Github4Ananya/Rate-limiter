@@ -1,5 +1,5 @@
-# Resilience4j- Session-1 Limit number of requests to RESTAPI using ratelimiter 
-In  this tutorial we are going to learn how to limit number of requests that a restapi can handle in a fixed duration. 
+# Resilience4j-Limit number of requests to RESTAPI using ratelimiter 
+ To limit the number of requests that a restapi can handle in a fixed duration. 
 There are several reasons to limit number of calls than an api can hanlde,few of them are.
 - To meet service level agreement
 - Protect resources from an overload and Denial of Service (DoS) attacks
@@ -14,19 +14,13 @@ Overview
 - This limitation can be set on greeting method using annotation **@RateLimiter**
 - if the method receives more than 5 requests an exception **io.github.resilience4j.ratelimiter.RequestNotPermitted** is thrown
 and user is served with HTTP status code 429 (Too Many Requests)  
-# Source Code 
-- [https://github.com/balajich/resilience4j-helloworld/tree/master/ratelimiter](https://github.com/balajich/resilience4j-helloworld/tree/master/ratelimiter) 
-# Video
-[![Spring Cloud Session-7 Centralized Configuration](https://img.youtube.com/vi/j9cH01mlK6k/0.jpg)](https://www.youtube.com/watch?v=j9cH01mlK6k)
-- https://youtu.be/j9cH01mlK6k
-# Architecture
-![architecture](architecture.png "architecture")
+
 # Prerequisite
 - User should have basic understanding of RESTAPI and Spring boot
 - JDK 1.8 or above
 - Apache Maven 3.6.3 or above
 # Build
-- ``` cd  resilience4j-helloworld ```
+`
 - ``` mvn clean install ```
 
 # Running RESTAPI
@@ -93,9 +87,6 @@ resilience4j:
 
 # References
 - https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
-- https://www.baeldung.com/resilience4j
+
 - Hands-On Microservices with Spring Boot and Spring Cloud: Build and deploy Java microservices 
 using Spring Cloud, Istio, and Kubernetes -Magnus Larsson
-# Next Tutorial
-How to deploy microservices using docker
-- https://github.com/balajich/spring-cloud-session-6-microservices-deployment-docker
