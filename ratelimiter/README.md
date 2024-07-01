@@ -1,4 +1,4 @@
-# Resilience4j-Limit number of requests to RESTAPI using ratelimiter 
+# Limit the number of requests to RESTAPI using ratelimiter 
  To limit the number of requests that a restapi can handle in a fixed duration. 
 There are several reasons to limit number of calls than an api can hanlde,few of them are.
 - To meet service level agreement
